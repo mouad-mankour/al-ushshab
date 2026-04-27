@@ -25,21 +25,21 @@ const dishes = {
       desc1: 'A dialogue between fire and earth.',
       desc2: 'Sun-dried elements returned to their primal state.',
       ingredients: 'Wild Thyme · Smoked Pine · Desert Truffle',
-      price: 'MAD 380', img: '/images/fish-spread.jpg', reverse: false,
+      price: 'MAD 380', img: '/images/fish-board-2.jpg', reverse: false,
     },
     {
       ar: 'ثمار الشمس', fr: 'Fruits du Soleil',
       desc1: 'Capturing the ephemeral sweetness of the Atlas peaks.',
       desc2: 'A vibrant contrast of heat and nectar.',
       ingredients: 'Mountain Berry · Honey Suckle · Spiced Syrup',
-      price: 'MAD 290', img: '/images/fish-board-2.jpg', reverse: true,
+      price: 'MAD 290', img: '/images/strawberry-dessert.jpg', reverse: true,
     },
     {
-      ar: 'مائدة الأطلس', fr: 'La Table de l\'Atlas',
+      ar: 'مائدة الأطلس', fr: "La Table de l'Atlas",
       desc1: 'A shared offering of abundance and tradition.',
       desc2: 'Forged in the heart of the hearth.',
       ingredients: 'Charred Sea Bass · Preserved Greens · Harissa Root',
-      price: 'MAD 750', img: '/images/shrimp-fire.jpg', reverse: false,
+      price: 'MAD 750', img: '/images/fish-spread.jpg', reverse: false,
     },
   ],
   Terre: [
@@ -52,7 +52,7 @@ const dishes = {
     },
     {
       ar: 'طين الأرض', fr: 'Argile & Mémoire',
-      desc1: 'A composition built from the earth\'s memory.',
+      desc1: "A composition built from the earth's memory.",
       desc2: 'Slow-roasted, wrapped in clay, revealed at the table.',
       ingredients: 'Lamb Shank · Atlas Clay · Ras el Hanout',
       price: 'MAD 680', img: '/images/feast-table.jpg', reverse: true,
@@ -64,7 +64,7 @@ const dishes = {
       desc1: 'A seasonal gathering from the heirloom garden.',
       desc2: 'Raw, fermented, and alive.',
       ingredients: 'Preserved Lemon · Wild Herbs · Cold-Press Olive',
-      price: 'MAD 310', img: '/images/harira-bowl.jpg', reverse: false,
+      price: 'MAD 310', img: '/images/herbs-sketch.jpg', reverse: false,
     },
   ],
   Feu: [

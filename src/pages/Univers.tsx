@@ -30,7 +30,7 @@ const elements = [
     ar: 'النبات',
     sub: "La sève et l'amertume",
     law: 'Loi III : Cueillir avec respect',
-    img: '/images/harira-bowl.jpg',
+    img: '/images/herbs-sketch.jpg',
     imgClass: 'filter saturate-50 brightness-75',
     reverse: false,
     lawAlign: 'left',
@@ -40,7 +40,7 @@ const elements = [
     label: 'Le Feu',
     ar: 'النار',
     sub: 'La cendre et la transformation',
-    law: 'Loi IV : Maîtriser l\'incandescence',
+    law: "Loi IV : Maîtriser l'incandescence",
     img: '/images/shrimp-fire.jpg',
     imgClass: 'filter contrast-125 saturate-50',
     reverse: true,
@@ -56,6 +56,12 @@ const cycleSteps = [
   { icon: 'restaurant',           label: 'Goût',      active: false },
   { icon: 'spa',                  label: 'Sensation', active: false },
   { icon: 'menu_book',            label: 'Mémoire',   active: true },
+]
+
+const memoirePhotos = [
+  { src: '/images/restaurant-interior.jpg', alt: 'Salle Al-ʿUshshāb', span: 'col-span-7 row-span-2' },
+  { src: '/images/group-table.jpg',         alt: 'Une table partagée',  span: 'col-span-5 row-span-1' },
+  { src: '/images/feast-table.jpg',         alt: 'Le festin',           span: 'col-span-5 row-span-1' },
 ]
 
 export default function Univers() {
@@ -155,7 +161,45 @@ export default function Univers() {
           </div>
         </section>
 
-        {/* 5. CTA */}
+        {/* 5. MÉMOIRE */}
+        <section className="py-section-gap px-margin-page">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
+              <div>
+                <span className="font-label-sm text-label-sm text-secondary uppercase tracking-[0.3em] mb-4 block">Mémoire</span>
+                <h2 className="font-display-ar text-display-ar text-on-surface">الذاكرة</h2>
+              </div>
+              <p className="font-display-lat text-headline-md text-on-surface-variant italic md:max-w-xs md:text-right">
+                Les instants qui demeurent.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-12 gap-3 h-[600px] md:h-[700px]">
+              {memoirePhotos.map((photo, i) => (
+                <div key={i} className={`${photo.span} relative overflow-hidden border border-outline-variant/30 p-1 group`}>
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover filter brightness-90 contrast-110 saturate-75 transition-transform duration-1000 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 shadow-[inset_0_0_60px_rgba(21,19,14,0.6)] pointer-events-none"></div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="flex items-center gap-6">
+                <div className="w-8 h-[1px] bg-secondary/40"></div>
+                <span className="font-label-sm text-label-sm text-outline uppercase tracking-[0.2em]">Casablanca · Maroc</span>
+              </div>
+              <p className="font-display-lat text-sm italic text-on-surface-variant md:max-w-sm md:text-right">
+                Chaque table est un acte de partage. Chaque repas, une mémoire gravée dans la chair et dans la fumée.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. CTA */}
         <section className="py-section-gap px-margin-page flex justify-center items-center relative">
           <div className="absolute inset-x-0 top-1/2 h-[1px] bg-outline-variant/20 -z-10"></div>
           <div className="border border-secondary/30 bg-surface p-1">
